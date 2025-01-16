@@ -41,8 +41,8 @@ public class Main {
         int inBank = 0;
         int bankMonth = 0;
         for (int i = 0; i < 12; i++) {
-            salary += salary / 100;
             inBank += salary;
+            inBank += inBank / 100;
             bankMonth += 1;
             System.out.printf("Месяц %s, сумма накоплений равна %s рублей%n", bankMonth, inBank);
         }
